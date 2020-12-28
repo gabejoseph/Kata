@@ -1,12 +1,13 @@
 const persistence = (num) => {
     let counter = 0   
     num = num.toString().split("")
+    console.log(num)
     while (num.length > 1) {
-        num = num.toString().split("").reduce((acc, curr) => 
-            acc * curr
+        num = num.reduce((acc, curr) => 
+            acc * curr 
         )
-        console.log(num)
         counter++
+        num = num.toString().split("")
     }
     return counter
 }
