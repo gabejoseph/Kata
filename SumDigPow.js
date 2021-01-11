@@ -1,5 +1,21 @@
 const sumDigPow = (a, b) => {
     // Your code here
+  let list = [];
+  for (var i = a; i <= b; i++) {
+    list.push(list);
+  }
+  for (let l of list) {
+    l = l.toString().split('')
+  }
+  console.log(list)
+  
+  for (let i = 0; i < list.length; i++) {
+    
+    if (list[i] === []) {
+      
+    }
+  }
+  
 }
   
 
