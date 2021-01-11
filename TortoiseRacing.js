@@ -1,5 +1,18 @@
 const race = (v1, v2, g) => {
     // your code
+  let hour;
+  let minute;
+  let second;
+  
+  if (v1 >= v2) {
+    return null
+  }
+  
+  hour = Math.floor(1 / ((v2 - v1) / g))
+  minute = Math.floor(((1 / ((v2 - v1) / g)) % 1) * 60)
+  second = Math.floor(((((1 / ((v2 - v1) / g)) % 1) * 60) % 1) * 60)
+    
+  return [hour, minute, second]  
 }
 
 
